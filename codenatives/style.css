@@ -558,3 +558,83 @@ Copyright (C) 2026 Codenatives
 	background: var(--accent-blue);
 	color: #ffffff;
 }
+
+/* ============================================================
+   Tailwind-Equivalent Layout Utilities (for fallback content)
+   ============================================================ */
+
+/* Container */
+.cn-container {
+	max-width: 80rem; /* 1280px */
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+/* Section padding */
+.cn-section { padding-top: 5rem; padding-bottom: 5rem; }
+.cn-section-sm { padding-top: 4rem; padding-bottom: 4rem; }
+
+@media (min-width: 1024px) {
+	.cn-section { padding-top: 7rem; padding-bottom: 7rem; }
+	.cn-section-sm { padding-top: 5rem; padding-bottom: 5rem; }
+}
+
+/* Flexbox */
+.cn-flex { display: flex; }
+.cn-flex-wrap { flex-wrap: wrap; }
+.cn-items-center { align-items: center; }
+.cn-justify-center { justify-content: center; }
+.cn-gap-4 { gap: 1rem; }
+.cn-gap-6 { gap: 1.5rem; }
+.cn-gap-8 { gap: 2rem; }
+.cn-gap-10 { gap: 2.5rem; }
+.cn-gap-12 { gap: 3rem; }
+
+@media (min-width: 1024px) {
+	.cn-lg-justify-end { justify-content: flex-end; }
+}
+
+/* Grid */
+.cn-grid { display: grid; }
+.cn-grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+@media (min-width: 640px) {
+	.cn-sm-grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+	.cn-sm-grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+	.cn-lg-grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+	.cn-lg-grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+	.cn-lg-grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+	.cn-lg-col-span-1 { grid-column: span 1 / span 1; }
+	.cn-lg-col-span-4 { grid-column: span 4 / span 4; }
+}
+
+/* Text */
+.cn-text-center { text-align: center; }
+.cn-text-left { text-align: left; }
+.cn-text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.cn-text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.cn-text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.cn-font-black { font-weight: 900; }
+.cn-font-semibold { font-weight: 600; }
+
+@media (min-width: 1024px) {
+	.cn-lg-text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+}
+
+/* Spacing */
+.cn-w-full { width: 100%; }
+.cn-max-w-2xl { max-width: 42rem; }
+.cn-mb-4 { margin-bottom: 1rem; }
+.cn-mb-6 { margin-bottom: 1.5rem; }
+.cn-mb-14 { margin-bottom: 3.5rem; }
+.cn-mb-16 { margin-bottom: 4rem; }
+.cn-mt-3 { margin-top: 0.75rem; }
+.cn-mt-4 { margin-top: 1rem; }
+.cn-mt-6 { margin-top: 1.5rem; }
+.cn-mt-8 { margin-top: 2rem; }
+.cn-mx-auto { margin-left: auto; margin-right: auto; }

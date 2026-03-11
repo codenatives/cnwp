@@ -225,6 +225,7 @@ add_filter( 'excerpt_more', 'codenatives_excerpt_more' );
 function codenatives_body_classes( $classes ) {
 	if ( is_front_page() ) {
 		$classes[] = 'codenatives-hero-page';
+		$classes[] = 'hero-page';
 	}
 
 	if ( ! is_singular() ) {
