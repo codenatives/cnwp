@@ -170,6 +170,11 @@ require get_template_directory() . '/inc/enqueue.php';
 require get_template_directory() . '/inc/elementor-support.php';
 
 /**
+ * Include homepage setup tool (admin only).
+ */
+require get_template_directory() . '/inc/setup-homepage.php';
+
+/**
  * Localize script strings for translation.
  */
 function codenatives_localize_scripts() {
